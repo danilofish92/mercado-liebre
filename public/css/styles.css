@@ -1,0 +1,67 @@
+header{
+    background-color: #EAC926;
+}   
+
+main {
+    background-color: #ebebeb;
+}
+
+header p {
+    text-align: center;
+}
+body{
+    font-family: 'roboto';
+}
+
+header{
+    font-size: 12px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+section p {
+    font-size: 16px;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+.burger-menu i{
+    margin: 16px;
+    background-color: #1259c3;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+footer div{
+    text-align: center;
+}
+
+.icono{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h4{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.pie-pagina{
+    margin: 0;
+}
+
+.copyright{
+    font-size: 10px;
+    text-align: left;
+    margin-top: 36px;
+}
