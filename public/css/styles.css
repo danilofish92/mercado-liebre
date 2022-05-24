@@ -1,15 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 header{
     background-color: #EAC926;
 }   
 
-main {
-    background-color: #ebebeb;
+img{
+    width: 100%;
 }
 
 header p {
     text-align: center;
 }
+
 body{
+    background-color: #ebebeb;
     font-family: 'roboto';
 }
 
@@ -17,8 +25,33 @@ header{
     font-size: 12px;
 }
 
+article{
+    background-color: white;
+    width: 90%;
+    border: solid 5px #ebebeb;
+    margin: auto;
+}
+
+.main-article{
+    padding: 15px;
+}
+
+.descuento{
+    color: green;
+}
+
+main section article img{
+    border-bottom: solid 1px #ebebeb;
+}
+
 h2{
     font-size: 24px;
+    width: 90%;
+    margin: auto;
+}
+
+main section article i{
+    color: green; 
 }
 
 .precio{
@@ -27,6 +60,10 @@ h2{
 
 section p {
     font-size: 16px;
+}
+
+h3{
+    padding-top: 20px;
 }
 
 .burger-menu{
