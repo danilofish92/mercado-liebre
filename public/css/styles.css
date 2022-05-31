@@ -17,24 +17,40 @@ h3{
 p{
     font-size: 12px;
 }
+
 div.top-header{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 5%;
+    text-align: center;
+}
+
+.form-buscador label input{
+    width: 90%;
+    padding: 6px 6px;
+    margin: 15px 0;
+    border-radius: 4px;
+    border: 1px solid #26282D;
+    outline: none;
+}
+
+.form-buscador button{
+
+}
+
+.header-total{
+    background-color: #EAC926
 }
 
 header{
     background-color: #EAC926;
+    width: 90%;
+    margin: auto;
 }
 
-header div.logo{
-    width: 50%;
-}
 
 header div.logo{
-    padding: 10px;
+    width: 200px;
+    margin: auto;
 }
+
 header nav{
     font-size: 12px;
 }
@@ -54,32 +70,11 @@ header ul li a{
     color: #000;
 }
 
-.form{
-    display: flex;
+.top-header .form-buscador{
     width: 50%;
+    margin: auto;
 }
 
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 25px;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
- 
 img{
     width: 100%;
 }
@@ -223,5 +218,12 @@ h4{
 @media (min-width : 769px){
     article{
         width: 20%;
+    }
+    div.top-header{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
     }
 }

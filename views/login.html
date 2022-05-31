@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrate</title>
+    <title>Iniciar sesión</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/styles-register.css">
+    <link rel="stylesheet" href="/css/styles-login.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/2da8e91210.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,56 +50,17 @@
         <img src="/images/img-home-banner.jpg" alt="Banner de ofertas">
     </section>
     <main>
-        <div class="register-body">
-            <div class="register-box">
-                <form action="/register" method="post">
-                    <div class="input-register">
+        <div class="login-box">
+            <div class="login-padding">
+                <form action="/login" method="post">
+                    <div class="input-login">
                         <label for="nombre"><input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido"></label>
                     </div>
-                    <div class="input-register">
-                        <label for="usuario"><input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario"></label>
-                    </div>
-                    <div class="input-register">
-                        <label for="Email"><input type="text" name="Email" id="Email" placeholder="Email"></label>
-                    </div>
-                    <div class="input-register">
-                        <label for="date">Fecha de nacimiento</br><input type="date" name="date" id="date" placeholder="mm/dd/yyyy"></label>
-                    </div>
-                    <div class="input-register">
-                        <label for="domicilio"><input type="text" name="domicilio" id="domicilio" placeholder="Domicilio"></label>
-                    </div>
-                    <div class="input-register">
-                        <p>Perfil de usuario</p>
-                        <div class="radio-usuario">                           
-                            <input type="radio" name="perfil-usuario" value="comprador" checked><label for="perfil-usuario">Comprador</label>
-                            <input type="radio" name="perfil-usuario" value="vendedor"><label for="perfil-usuario">Vendedor</label>
-                        </div>
-                    <div class="input-register">
-                        <p>Interes</p>
-                        <div class="checkbox-interes">
-                            <input type="checkbox" name="interes" value="electro"><label for="intereses">Electro</label><br>
-                            <input type="checkbox" name="interes" value="moda"><label for="intereses">Moda</label><br>
-                            <input type="checkbox" name="interes" value="hogar"><label for="intereses">Hogar</label><br>
-                            <input type="checkbox" name="interes" value="jugueteria"><label for="intereses">juguetería</label><br>
-                            <input type="checkbox" name="interes" value="vida-sana"><label for="intereses">Vida sana</label>
-                        </div>
-                    <div class="input-register">
-                        <label for="foto-usuario">Foto de usuario</label><br>
-                        <input type="file" name="foto-usuario" id="foto-usuario">
-                    </div>
-                    <div class="input-register">
+                    <div class="input-login">
                         <label for="password"><input type="password" name="password" id="password" placeholder="Contraseña"></label>
                     </div>
-                    <div class="input-register">
-                        <label for="password-repeat"><input type="password" name="password-repeat" id="password-repeat" placeholder="Repetir contraseña"></label>
-                    </div>
-                    <div class="button">
-                        <div class="button-submit">
-                            <button type="submit" class="submit-iniciar-sesion"><span>Iniciar sesión</span></button>
-                        </div>
-                        <div class="button-reset">
-                            <button type="reset" class="submit-reset"><span>Borrar</span></button>
-                        </div>
+                    <div class="button-login">
+                        <button type="submit" class="submit-iniciar-sesion"><span>Iniciar sesión</span></button>
                     </div>
                 </form>
             </div>
