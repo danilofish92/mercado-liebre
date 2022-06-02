@@ -11,7 +11,9 @@ body{
 
 h3{
     display: none;
-    font-size: 24px;
+    font-size: 16px;
+    padding-top: 20px;
+    color: #666;
 }
 
 p{
@@ -19,7 +21,11 @@ p{
 }
 
 div.top-header{
+    display: flex;
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .form-buscador label input{
@@ -31,8 +37,29 @@ div.top-header{
     outline: none;
 }
 
-.form-buscador button{
+.input-buscador{
+    width: 100%;
+}
 
+.form-completo{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.form-completo label{
+    width: 100%;
+}
+
+.form-completo button{
+    position: relative;
+    padding: 6px;
+    border: 1px solid #26282D;
+    background-color: white;
+    right: 30px;
+    border-radius: 4px;
 }
 
 .header-total{
@@ -43,11 +70,12 @@ header{
     background-color: #EAC926;
     width: 90%;
     margin: auto;
+    padding-bottom: 20px;
 }
 
 
 header div.logo{
-    width: 200px;
+    width: 50%;
     margin: auto;
 }
 
@@ -95,7 +123,7 @@ main{
 .descuento{
     width: 70%;
     color: green;
-
+    font-size: 16px;
 }
 
 h2{
@@ -109,12 +137,14 @@ article{
     background-color: white;
 }
 
+article img{
+    border-bottom: solid 1px #ebebeb;
+}
+
 .precio-descuento{
     display: flex;
     align-items: center;
 }
-
-
 
 main section article i{
     color: #39b54a; 
@@ -132,17 +162,12 @@ main section article i{
 }
 
 .precio{
-    width: 30%;
+    width: 60%;
     font-size: 18px;
 }
 
 section p {
     font-size: 16px;
-}
-
-h3{
-    padding-top: 20px;
-    color: #666;
 }
 
 .burger-menu{
@@ -183,9 +208,16 @@ h4{
 }
 
 @media (min-width: 361px) {
+    header div.logo{
+        width: 200px;
+    }
 
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    div.top-header{
+        flex-wrap: nowrap;
+    }
+
+    .burger-menu{
+        display: none;
     }
 
     h3{
@@ -194,10 +226,12 @@ h4{
     nav{
         display: block;
     }
+    
     .products{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: flex-start
     }
     
     article{
@@ -216,6 +250,7 @@ h4{
   }
 
 @media (min-width : 769px){
+    
     article{
         width: 20%;
     }
@@ -225,5 +260,31 @@ h4{
         align-items: center;
         justify-content: space-between;
         padding: 10px 0;
+    }
+
+    .main-article h3{
+        display: none;
+    }
+
+    article:hover .main-article h3{
+        display: flex;
+    }
+
+    article:hover .main-article i{
+        transform: rotateZ(-90deg);
+        transition-duration: 1s;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .footer-text{
+        margin: 10px;
+        display: flex;
+    }
+
+    .footer-text div:hover .icono i{
+        color:rgb(0, 14, 117);
     }
 }

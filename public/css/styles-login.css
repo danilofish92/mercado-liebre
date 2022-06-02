@@ -40,3 +40,9 @@
     color: white;
     padding: 3px 40px;
 }
+
+@media (min-width : 769px){
+    .button-login button:hover{
+        background: #0022AA;
+    }
+}
