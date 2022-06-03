@@ -22,9 +22,9 @@
                 </div>
                 <div class="form-buscador">
                     <form action="input-buscador">
-                        <div class="form-completo">
+                        <div class="form-box">
                             <label for="/buscador"><input type="text" placeholder="Buscar productos, marcas y más"></label>
-                            <button type="submit" class="submit-iniciar-sesion"><span><i class="fa fa-search"></i></span></button>    
+                            <button type="submit" class="search-submit"><span><i class="fa fa-search"></i></span></button>    
                         </div>
                     </form>
                 </div>
@@ -73,17 +73,21 @@
                     <div class="input-register">
                         <p>Perfil de usuario</p>
                         <div class="radio-usuario">                           
-                            <input type="radio" name="perfil-usuario" value="comprador" checked><label for="perfil-usuario">Comprador</label>
-                            <input type="radio" name="perfil-usuario" value="vendedor"><label for="perfil-usuario">Vendedor</label>
+                            <label>
+                                <input type="radio" name="perfil-usuario" value="comprador" checked>Comprador
+                            </label>
+                            <label>
+                                <input type="radio" name="perfil-usuario" value="vendedor">Vendedor
+                            </label>
                         </div>
                     <div class="input-register">
                         <p>Interes</p>
                         <div class="checkbox-interes">
-                            <input type="checkbox" name="interes" value="electro"><label for="intereses">Electro</label><br>
-                            <input type="checkbox" name="interes" value="moda"><label for="intereses">Moda</label><br>
-                            <input type="checkbox" name="interes" value="hogar"><label for="intereses">Hogar</label><br>
-                            <input type="checkbox" name="interes" value="jugueteria"><label for="intereses">juguetería</label><br>
-                            <input type="checkbox" name="interes" value="vida-sana"><label for="intereses">Vida sana</label>
+                            <label><input type="checkbox" name="interes" value="electro">Electro</label><br>
+                            <label><input type="checkbox" name="interes" value="moda">Moda</label><br>
+                            <label><input type="checkbox" name="interes" value="hogar">Hogar</label><br>
+                            <label><input type="checkbox" name="interes" value="jugueteria">Juguetería</label><br>
+                            <label><input type="checkbox" name="interes" value="vida-sana">Vida sana</label>
                         </div>
                     <div class="input-register">
                         <label for="foto-usuario">Foto de usuario</label><br>
